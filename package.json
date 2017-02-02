@@ -2,10 +2,15 @@
   "name": "whoami",
   "version": "1.0.0",
   "description": "FCC Request Header Parser Microservice",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "npm test && ./node_modules/nodemon/bin/nodemon.js app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
 }
