@@ -4,7 +4,8 @@
   "description": "FCC Request Header Parser Microservice",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
