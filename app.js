@@ -2,7 +2,7 @@
 const express = require("express")
 const app = express()
 
-app.get('/api/whoami', (req, res) => {
+app.get('/whoami', (req, res) => {
 
     let output = {  
                     ipaddress: req.get("x-forwarded-for") || req.ip || req.socket.remoteAddress ||req.connection.socket.remoteAddress,
