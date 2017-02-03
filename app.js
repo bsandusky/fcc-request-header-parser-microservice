@@ -3,9 +3,7 @@ const express = require("express")
 const app = express()
 
 app.get('/api/whoami', (req, res) => {
-    
-    console.log(req)
-    
+
     let output = {  
                     ipaddress: req.get("x-forwarded-for") || req.ip || req.socket.remoteAddress ||req.connection.socket.remoteAddress,
                     language: req.get("accept-language").split(",")[0],
